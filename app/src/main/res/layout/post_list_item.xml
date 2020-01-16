@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin">
+
+    <TextView
+        android:id="@+id/titlePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="sunt aut facere repellat provident occaecati excepturi optio reprehenderit"/>
+
+    <TextView
+        android:id="@+id/bodyPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"/>
+
+</LinearLayout>

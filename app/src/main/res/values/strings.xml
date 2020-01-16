@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android</string>
+
+    <!--Titles-->
+    <string name="title_main_message_list_empty">List is empty</string>
+    <string name="title_main_button_show_posts">Show Posts</string>
+    <string name="title_post_text_name">Name</string>
+    <string name="title_post_text_phone">Phone Number</string>
+    <string name="title_post_text_email">Email</string>
+
+    <!--Loading-->
+    <string name="title_loading_dialog">Loading...</string>
+
+</resources>

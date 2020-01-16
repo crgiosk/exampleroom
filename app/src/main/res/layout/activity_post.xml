@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_post_text_name"
+            android:textStyle="bold"
+            tools:text="Name"/>
+
+        <TextView
+            android:id="@+id/textNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:text="Camilo Rubio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/title_post_text_phone"/>
+
+        <TextView
+            android:id="@+id/textPhoneUser"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:text="3502184047" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/title_post_text_email"/>
+
+        <TextView
+            android:id="@+id/textEmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorGray"
+            android:ems="10"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:text="camilorubiocontreras@gmail.com" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPosts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:itemCount="9"
+            tools:listitem="@layout/post_list_item" />
+
+    </FrameLayout>
+
+</LinearLayout>
